@@ -1,16 +1,64 @@
-# React + Vite
+# Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a modern, responsive portfolio website built with **React**, **Vite**, and **Tailwind CSS v4**. It features a clean, component-based architecture and is ready for customization and deployment.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- ⚡️ Fast development with Vite
+- 🎨 Styled with Tailwind CSS v4 (JIT, no config needed for most use cases)
+- 🧩 Modular React components for each section (Hero, About, Work Process, Portfolio, Blog, Services, Clients, Testimonial, Contact, Footer)
+- 📱 Fully responsive and mobile-friendly
+- 🛠️ ESLint for code quality
+- 🔥 Hot Module Replacement (HMR)
 
-## React Compiler
+## Getting Started
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+1. **Install dependencies:**
 
-## Expanding the ESLint configuration
+   ```sh
+   npm install
+   ```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+2. **Start the development server:**
+
+   ```sh
+   npm run dev
+   ```
+
+3. **Build for production:**
+
+   ```sh
+   npm run build
+   ```
+
+4. **Preview the production build:**
+   ```sh
+   npm run preview
+   ```
+
+## Project Structure
+
+```
+src/
+  components/      # Reusable React components for each section
+  App.jsx          # Main app entry, imports all sections
+  index.css        # Tailwind CSS import
+  main.jsx         # React/Vite entry point
+public/
+  ...              # Static assets
+vite.config.js     # Vite and Tailwind plugin config
+```
+
+## Customization
+
+- Update content and images in the `src/components/` files.
+- Add or remove sections as needed by editing `App.jsx`.
+- Tailwind v4 is used via `@import "tailwindcss";` in `index.css` (no config file needed for most projects).
+
+## Deployment
+
+You can deploy the production build from the `dist/` folder to any static hosting service (Vercel, Netlify, GitHub Pages, etc).
+
+---
+
+Made with ❤️ using React, Vite, and Tailwind CSS.
